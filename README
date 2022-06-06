@@ -1,0 +1,106 @@
+#  Yeye Automated Tests
+
+## Table Of Contents
+* TestCases
+* Pre-requisites
+* Generated Project Structure
+* How to execute tests
+
+##  Pre-requisites
+
+#Feature: 	Checkout page
+
+Scenario:	Checkout page - One user, single experience, today, credit card
+
+Test cases:
+
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - All - Mandatory (Automated)
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - First name - Mandatory 
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - Last name - Mandatory
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - Tour language
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - CreditCardNumber
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - ExpiryDateMonthLocator
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - ExpiryDateYearLocator
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - SecurityCodeLocator
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - ContactInfoEmailLocator
+* Checkout page - One user - Single experience - Today - Credit card - Input Fields - PhoneNumberLocator
+* Checkout page - One user - Single experience - Today - Credit card - Buttons - Checkout
+
+Scenario:	Checkout page - One user, single experience, today, PayPal
+
+Test cases:
+
+* Checkout page - One user - Single experience - Today - PayPal - Input Fields - All - Mandatory
+* Checkout page - One user - Single experience - Today - PayPal - Input Fields - First name - Mandatory
+* Checkout page - One user - Single experience - Today - PayPal - Input Fields - Last name - Mandatory
+* Checkout page - One user - Single experience - Today - PayPal - Input Fields - Tour language
+* Checkout page - One user - Single experience - Today - PayPal - Input Fields - ContactInfoEmailLocator
+* Checkout page - One user - Single experience - Today - PayPal - Input Fields - PhoneNumberLocator
+* Checkout page - One user - Single experience - Today - PayPal - Buttons - Checkout
+	
+
+
+
+##  Pre-requisites
+
+1. JDK 8 installed for AFT Release >= 8.0.0
+2. Maven installed and configured
+4. Selenium Grid 4.0 installed
+
+##  Project Structure
+
+```
+yeye-web-test/
+├── pom.xml
+├── src
+│   ├── README
+│   ├── main
+│   │   ├── java
+│   │   └── resources
+│   └── test
+│       ├── java
+│       │   └── bo
+│       │       └── tic
+│       │           └── www
+│       │               ├── CheckOutPageTest.java
+│       │               ├── E2EPages.java
+│       │               └── Wrapper.java
+│       └── resources
+│           └── project.properties
+└── target
+    ├── classes
+    ├── maven-status
+    │   └── maven-compiler-plugin
+    │       ├── compile
+    │       │   └── default-compile
+    │       │       └── inputFiles.lst
+    │       └── testCompile
+    │           └── default-testCompile
+    │               ├── createdFiles.lst
+    │               └── inputFiles.lst
+    ├── surefire-reports
+    │   ├
+    │   └── bo.tic.www.CheckOutPageTest.txt
+    └── test-classes
+        ├── bo
+        │   └── tic
+        │       └── www
+        │           ├── CheckOutPageTest.class
+        │           ├── E2EPages.class
+        │           └── Wrapper.class
+        └── project.properties
+```
+
+##  How to execute tests
+From terminal execute:
+
+```
+mvn -Dtest=CheckOutPageTest test -DseleniumUrl=<SELENIUM_SERVER_GRID>
+
+```
+Example:
+
+```
+mvn -Dtest=CheckOutPageTest test -DseleniumUrl=http://localhost:4444/wd/hub
+
+```
