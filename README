@@ -92,7 +92,8 @@ yeye-web-test/
 ```
 
 ##  How to execute tests
-From terminal execute:
+
+Start selenium grid server, and then from terminal execute:
 
 ```
 mvn -Dtest=CheckOutPageTest test -DseleniumUrl=<SELENIUM_SERVER_GRID>
