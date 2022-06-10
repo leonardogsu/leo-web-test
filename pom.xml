@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>bo.tic.www</groupId>
-  <artifactId>yeye-web-test</artifactId>
+  <groupId>bo.tic.leo</groupId>
+  <artifactId>leo-web-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   
@@ -25,12 +25,31 @@
     <scope>test</scope>
 </dependency>
 
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>5.2.0</version>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.6</version>
+    <scope>provided</scope>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>5.2.0</version>
+    <scope>test</scope>
+</dependency>
 
 
 </dependencies>
 
 <properties>
-    <selenium.url>${seleniumUrl}</selenium.url>
+    <selenium.url>http://localhost:4444/wd/hub</selenium.url>
 </properties>
 
 <build>
