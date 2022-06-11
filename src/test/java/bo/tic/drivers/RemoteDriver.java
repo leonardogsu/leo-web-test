@@ -1,7 +1,6 @@
-package bo.tic.www;
+package bo.tic.drivers;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Properties;
@@ -13,11 +12,11 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.Keys;
 
-public class Wrapper {	
+public class RemoteDriver {	
 
 	private RemoteWebDriver driver;	
 		
-	public Wrapper(RemoteWebDriver driver) {		
+	public RemoteDriver(RemoteWebDriver driver) {		
 		this.driver 	=driver;
 		
 	}
@@ -25,7 +24,7 @@ public class Wrapper {
 	public RemoteWebDriver firefoxDriverConnection() throws IOException {
 		
 		Properties props = new Properties();
-		props.load(Wrapper.class.getClassLoader().getResourceAsStream("project.properties"));
+		props.load(RemoteDriver.class.getClassLoader().getResourceAsStream("project.properties"));
 		String url = props.getProperty("selenium-grid-url");
 		
 		DesiredCapabilities dr = DesiredCapabilities.firefox(); 
