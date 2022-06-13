@@ -103,7 +103,6 @@ leo-web-test/
 ├── README.md
 ├── pom.xml
 ├── src
-
 └── target
 ├── generated-test-sources
 ├── leo-web-test-0.0.1-SNAPSHOT.jar
