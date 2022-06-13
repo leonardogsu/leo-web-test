@@ -1,4 +1,4 @@
-#  Yeye Automated Tests
+#  TIC.BO Automated Tests
 
 ## Table Of Contents
 * Features
