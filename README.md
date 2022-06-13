@@ -1,5 +1,3 @@
-#  TIC.BO Automated Tests
-
 ## Table Of Contents
 * Features
 * Pre-requisites
