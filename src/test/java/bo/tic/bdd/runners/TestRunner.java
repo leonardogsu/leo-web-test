@@ -7,15 +7,11 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/resources/stories/functional/suite_a/rest",
-		glue= "bo.tic.bdd.stepdefinitions",
-		monochrome = true,
+		glue = "bo.tic.bdd.stepdefinitions",
 		strict = true
-		
-		)
 
+)
 public class TestRunner {
-
-	
 
 
 }
