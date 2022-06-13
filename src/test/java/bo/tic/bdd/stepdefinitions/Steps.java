@@ -116,7 +116,7 @@ public class Steps {
 
 	@Then("error type is {string}")
 	public void errorTypeIs(String expected_error) {
-		System.out.println("error ==> " + expected_error);
+		System.out.println("expected_error ==> " + expected_error);
 		String error = json.get("error").toString();
 		System.out.println("error ==> " + error);
 		Assert.assertEquals(expected_error,error);
