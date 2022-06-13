@@ -47,41 +47,9 @@ leo-web-test/
 │                   └── suite_a
 │                       └── rest
 │                           └── Suite - A - Catalog - List.feature
-└── target
-    ├── generated-test-sources
-    │   └── test-annotations
-    ├── leo-web-test-0.0.1-SNAPSHOT.jar
-    ├── maven-archiver
-    │   └── pom.properties
-    ├── maven-status
-    │   └── maven-compiler-plugin
-    │       ├── compile
-    │       │   └── default-compile
-    │       │       └── inputFiles.lst
-    │       └── testCompile
-    │           └── default-testCompile
-    │               ├── createdFiles.lst
-    │               └── inputFiles.lst
-    ├── surefire-reports
-    │   ├── TEST-bo.tic.bdd.runners.TestRunner.xml
-    │   └── bo.tic.bdd.runners.TestRunner.txt
+└── target    
+    ├── surefire-reports    
     └── test-classes
-        ├── bo
-        │   └── tic
-        │       ├── bdd
-        │       │   ├── runners
-        │       │   │   └── TestRunner.class
-        │       │   └── stepdefinitions
-        │       │       └── Steps.class
-        │       └── drivers
-        │           └── RemoteDriver.class
-        ├── project.properties
-        └── stories
-            └── functional
-                └── suite_a
-                    └── rest
-                        └── Suite - A - Catalog - List.feature
-
 
 ```
 
@@ -108,9 +76,7 @@ leo-web-test/
 ├── leo-web-test-0.0.1-SNAPSHOT.jar
 ├── maven-archiver
 ├── maven-status
-├── surefire-reports
-│   ├── TEST-bo.tic.bdd.runners.TestRunner.xml
-│   └── bo.tic.bdd.runners.TestRunner.txt
+├── surefire-reports 
 └── test-classes
 
 ``` 
