@@ -15,7 +15,7 @@ src/test/resources/stories/functional/
 ##  Pre-requisites
 
 1. JDK 8 installed
-2. Maven installed and configured
+2. Apache Maven 3.6.3 installed and configured
 
 ##  Project Structure
 
